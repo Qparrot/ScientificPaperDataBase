@@ -1,17 +1,22 @@
-#Sc. Paper Database
+# Sc. Paper Database
 
-##Goal
+## Goal
 	create a website that that show scientific papers and is free for everyone. The goal is to use free peer review.
 
-##Log
+## Log
 -(04.07.2019): Start the project.
 	Create a first html and the js to host the fetch request.
+
 -(05.07.2019): Try to get more information about the API and how to get the data.
+
 -(08.07.2019): Learn RESTFUL API with openclassroom. 
+
 -(09.07.2019): 	- I now know that the js is running but not working.
 		- I should try to use a server side to do get of the API...
+
 -(10.07.2019): 	- I tried with another API. I have the same issue with randomusers and jsonplaceholders.
 		- I tried without the form it is now working properly... I don't know why.e 
+
 -(11.07.2019):	- I tried to call the api with an onclick event link to the input. It is working.
 		- I tried to call the api with an onsubmit event link to the form. It is not working unless I add in the parameter or the the function event.preventDefault(). I don't really know why... It is said in the stackoverflow discussion that this prevent the default behavior to happend and to disturb the call. _(link 36)_ 
  
