@@ -12,6 +12,10 @@
 		- I should try to use a server side to do get of the API...
 -(10.07.2019): 	- I tried with another API. I have the same issue with randomusers and jsonplaceholders.
 		- I tried without the form it is now working properly... I don't know why.e 
+-(11.07.2019):	- I tried to call the api with an onclick event link to the input. It is working.
+		- I tried to call the api with an onsubmit event link to the form. It is not working unless I add in the parameter or the the function event.preventDefault(). I don't really know why... It is said in the stackoverflow discussion that this prevent the default behavior to happend and to disturb the call. _(link 36)_ 
+ 
+
 ## Difficulties
 -(04.07.2019): I don't know how to implement the "PubMed API method:GET".
 	A(09.07.2019): Help from Jonathan: He recommended me to implement in it a console.log('test') in order to check if the function is launch... It wasn't ... 
@@ -65,4 +69,5 @@ DEBUGGING SKILLS.
 33. **Using CORS:** https://www.html5rocks.com/en/tutorials/cors/#toc-making-a-cors-request
 34. **how to do Cross domian request:** https://znlive.com/how-web-api-solves-common-problems-in-cross-domain-requests
 35. **Enabling CORS on NODE.js:** https://dzone.com/articles/cors-in-node
+36. **HTML form action and onsubmit issues:** https://stackoverflow.com/questions/16262797/html-form-action-and-onsubmit-issues
 
