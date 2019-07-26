@@ -3,6 +3,14 @@
 ## Goal
 create a website that that show scientific papers and is free for everyone. The goal is to use free peer review.
 
+## Version
+
+- V1: 
+	- It is available online.
+	- I can do a research on paper present in the database of pubmed and chedmed and biomed (figma: V1 Welcome page).
+	- By clicking on searching  the search bar disapear and I show cards(FIGMA: V1 Result page).
+	- Each card coresponds to a publication. In the card we have the name, the year of publication, a description and the link to consult it.
+
 ## Log
 -(04.07.2019): Start the project.
 	Create a first html and the js to host the fetch request.
@@ -20,7 +28,8 @@ create a website that that show scientific papers and is free for everyone. The 
 -(11.07.2019):	- I tried to call the api with an onclick event link to the input. It is working.
 		- I tried to call the api with an onsubmit event link to the form. It is not working unless I add in the parameter or the the function event.preventDefault(). I don't really know why... It is said in the stackoverflow discussion that this prevent the default behavior to happend and to disturb the call. _(link 36)_ 
  
-
+- (26.07.2019): commit 'show some title'
+	- 
 ## Difficulties
 -(04.07.2019): I don't know how to implement the "PubMed API method:GET".
 	A(09.07.2019): Help from Jonathan: He recommended me to implement in it a console.log('test') in order to check if the function is launch... It wasn't ... 
@@ -28,6 +37,12 @@ LEARN DEBUGGING SKILLS !!! Then I got a error: "TypeError: NetworkError when att
 
 -(10.07.2019): 	- Sometime the GET request in the form is working( 1 out of 12 times). why?
 		- Without the form sometimes (1 out of 8 times) I have this error message: "Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=science[journal]+AND+breast+cancer+AND+2008[pdat]&retmode=json. (Reason: CORS header ‘Access-Control-Allow-Origin’ missing).". Why?
+
+-(26.07.2019):
+		- how to manipulate the api.
+		- how to manipulate the json file with a number as a key.
+		- how to go through the CORS?
+		- how to go api call limit ? 
 ## to Dig into:
 _(link 3)_
 DEBUGGING SKILLS.
