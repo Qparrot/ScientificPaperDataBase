@@ -29,7 +29,10 @@ create a website that that show scientific papers and is free for everyone. The 
 		- I tried to call the api with an onsubmit event link to the form. It is not working unless I add in the parameter or the the function event.preventDefault(). I don't really know why... It is said in the stackoverflow discussion that this prevent the default behavior to happend and to disturb the call. _(link 36)_ 
  
 - (26.07.2019): commit 'show some title'
-	- 
+	- I fetch and show some title result of a specific request.
+
+- (27.07.2019):	commit 'improve README.md'
+	- I add some explanations.
 ## Difficulties
 -(04.07.2019): I don't know how to implement the "PubMed API method:GET".
 	A(09.07.2019): Help from Jonathan: He recommended me to implement in it a console.log('test') in order to check if the function is launch... It wasn't ... 
@@ -40,9 +43,9 @@ LEARN DEBUGGING SKILLS !!! Then I got a error: "TypeError: NetworkError when att
 
 -(26.07.2019):
 		- how to manipulate the api.
-		- how to manipulate the json file with a number as a key.
-		- how to go through the CORS?
-		- how to go api call limit ? 
+		- how to manipulate the json file with a number as a key. => SUCCESS _(lin 37)_
+		- how to go through the CORS? => SUCCESS _(link 38)_ 
+		- how to go api call limit ? => find another way _(link 38)_
 ## to Dig into:
 _(link 3)_
 DEBUGGING SKILLS.
@@ -55,7 +58,7 @@ DEBUGGING SKILLS.
 - (-) CORS. _(link 27, 28, 29, 30)_
 
 ##Links
-1. **API request:** https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=science[journal]+AND+breast+cancer+AND+2008[pdat]
+1. **API esearch request:** https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=science[journal]+AND+breast+cancer+AND+2008[pdat]
 2. **How to get or fetch button click event listener using javascript or jquery:** https://stackoverflow.com/questions/37964593/how-to-get-or-fetch-button-click-event-listener-using-javascript-or-jquery#37965608
 3. **Solr vs Elasticsearch:** http://solr-vs-elasticsearch.com/
 4. **hadoop:** http://hadoop.apache.org/
@@ -91,4 +94,7 @@ DEBUGGING SKILLS.
 34. **how to do Cross domian request:** https://znlive.com/how-web-api-solves-common-problems-in-cross-domain-requests
 35. **Enabling CORS on NODE.js:** https://dzone.com/articles/cors-in-node
 36. **HTML form action and onsubmit issues:** https://stackoverflow.com/questions/16262797/html-form-action-and-onsubmit-issues
-
+37. **How to parse JSON with number as a key**:https://stackoverflow.com/questions/23552708/how-to-parse-json-with-number-as-a-key
+38. **Allow Access-Control-Allow-Origin header using HTML5 fetch API**: https://stackoverflow.com/questions/36878255/allow-access-control-allow-origin-header-using-html5-fetch-api#40063679
+39. **How to resolve twitter api rate limit?**: https://stackoverflow.com/questions/34822389/how-to-resolve-twitter-api-rate-limit
+40. **API esummary request**: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=19008416&retmode=json
