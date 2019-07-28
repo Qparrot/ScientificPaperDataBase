@@ -33,6 +33,12 @@ create a website that that show scientific papers and is free for everyone. The 
 
 - (27.07.2019):	commit 'improve README.md'
 	- I add some explanations.
+
+- (28.07.2019): commit 'show every results'
+	- We can now add arguments to the search.
+	- It shows now the title of all the publication related to the search.
+	- Addition of a bit of design.
+
 ## Difficulties
 -(04.07.2019): I don't know how to implement the "PubMed API method:GET".
 	A(09.07.2019): Help from Jonathan: He recommended me to implement in it a console.log('test') in order to check if the function is launch... It wasn't ... 
@@ -46,6 +52,9 @@ LEARN DEBUGGING SKILLS !!! Then I got a error: "TypeError: NetworkError when att
 		- how to manipulate the json file with a number as a key. => SUCCESS _(lin 37)_
 		- how to go through the CORS? => SUCCESS _(link 38)_ 
 		- how to go api call limit ? => find another way _(link 38)_
+-(28.07.2019):
+		- How to get the value enter by the user in the input field and add use it in the search. => _(link 41)_
+
 ## to Dig into:
 _(link 3)_
 DEBUGGING SKILLS.
@@ -98,3 +107,4 @@ DEBUGGING SKILLS.
 38. **Allow Access-Control-Allow-Origin header using HTML5 fetch API**: https://stackoverflow.com/questions/36878255/allow-access-control-allow-origin-header-using-html5-fetch-api#40063679
 39. **How to resolve twitter api rate limit?**: https://stackoverflow.com/questions/34822389/how-to-resolve-twitter-api-rate-limit
 40. **API esummary request**: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=19008416&retmode=json
+41. **Passing a form-variable into the onsubmit field?**: https://stackoverflow.com/questions/17579605/passing-a-form-variable-into-the-onsubmit-field#17579974

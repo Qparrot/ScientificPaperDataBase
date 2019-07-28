@@ -3,13 +3,15 @@
 	<head>
 		<title>Sc. Paper Database</title>
 		<meta charset="UTF-8">
-		<link href="style.css" ref="stylesheet">
+		<link href="style.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	</head>
 
 	<body id="main">
-			<form onsubmit="getScientificPaper()">
-	  //			<input type="text" />
-			<input id="searchButton" value="Submit" type="submit" />
+		<form onsubmit="getScientificPaper()">
+			<input type="text" name='arguments' id='arguments' />
+			<input id="searchButton" type="submit" />
 		</form>
+		<div id="result"></div>
 			<script src="index.js"></script>
 	</body>
