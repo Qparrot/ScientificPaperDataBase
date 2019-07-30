@@ -8,10 +8,17 @@
 	</head>
 
 	<body id="main">
-		<form onsubmit="getScientificPaper()">
-			<input type="text" name='arguments' id='arguments' />
-			<input id="searchButton" type="submit" />
+		<form id="searchBar" class="h-100 row align-items-center" onsubmit="getScientificPaper()">
+			<div class="col-sm-2"></div>
+			<select class="col-sm-2" name="fields">
+				<option value="allDatabase">All Database</option>
+				<option value="pubMed">PubMed</option>
+				<option value="bioMed">BioMed</option>
+				<option value="chimMed">ChiMed</option>
+			</select>
+			<input class="col-sm-4" type="text" name='arguments' id='arguments' />
+			<input class="col-sm-2" id="searchButton" type="submit" />
 		</form>
 		<div id="result"></div>
-			<script src="index.js"></script>
+		<script src="index.js"></script>
 	</body>

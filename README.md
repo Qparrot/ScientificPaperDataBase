@@ -38,23 +38,30 @@ create a website that that show scientific papers and is free for everyone. The 
 	- We can now add arguments to the search.
 	- It shows now the title of all the publication related to the search.
 	- Addition of a bit of design.
-
+- (30.07.2019): commit 'graphical improvement'
+	- Use bootstrap to better display the form
+	- add a dropdown selector for the database.
 ## Difficulties
--(04.07.2019): I don't know how to implement the "PubMed API method:GET".
+- (04.07.2019): 
+	- I don't know how to implement the "PubMed API method:GET".
 	A(09.07.2019): Help from Jonathan: He recommended me to implement in it a console.log('test') in order to check if the function is launch... It wasn't ... 
 LEARN DEBUGGING SKILLS !!! Then I got a error: "TypeError: NetworkError when attempting to fetch resource."
 
--(10.07.2019): 	- Sometime the GET request in the form is working( 1 out of 12 times). why?
-		- Without the form sometimes (1 out of 8 times) I have this error message: "Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=science[journal]+AND+breast+cancer+AND+2008[pdat]&retmode=json. (Reason: CORS header ‘Access-Control-Allow-Origin’ missing).". Why?
+- (10.07.2019):
+	- Sometime the GET request in the form is working( 1 out of 12 times). why? 
+		Answer => I was user a forEach loop in which I did the second fetch request. Unfortunately We are limited to 5 request max. So instead of doing one request for each publication I need to do a request for all the publications. 
+	- Without the form sometimes (1 out of 8 times) I have this error message: "Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=science[journal]+AND+breast+cancer+AND+2008[pdat]&retmode=json. (Reason: CORS header ‘Access-Control-Allow-Origin’ missing).". Why?
 
--(26.07.2019):
-		- how to manipulate the api.
-		- how to manipulate the json file with a number as a key. => SUCCESS _(lin 37)_
-		- how to go through the CORS? => SUCCESS _(link 38)_ 
-		- how to go api call limit ? => find another way _(link 38)_
--(28.07.2019):
-		- How to get the value enter by the user in the input field and add use it in the search. => _(link 41)_
-
+- (26.07.2019):
+	- how to manipulate the api.
+	- how to manipulate the json file with a number as a key. => SUCCESS _(lin 37)_
+	- how to go through the CORS? => SUCCESS _(link 38)_ 
+	- how to go api call limit ? => find another way _(link 38)_
+- (28.07.2019):
+	- How to get the value enter by the user in the input field and add use it in the search. => _(link 41)_
+- (30.07.2019):
+	- how to add the selector menu. => _(link 42)_
+	- How to use bootstrap with the col. => _(link 43, 44)_
 ## to Dig into:
 _(link 3)_
 DEBUGGING SKILLS.
@@ -108,3 +115,7 @@ DEBUGGING SKILLS.
 39. **How to resolve twitter api rate limit?**: https://stackoverflow.com/questions/34822389/how-to-resolve-twitter-api-rate-limit
 40. **API esummary request**: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=19008416&retmode=json
 41. **Passing a form-variable into the onsubmit field?**: https://stackoverflow.com/questions/17579605/passing-a-form-variable-into-the-onsubmit-field#17579974
+42. **Add a Drop-Down Selector, Radio Buttons, and Checkboxes to an Embedded Form **: https://help.drip.com/hc/en-us/articles/115003737572-Add-a-Drop-Down-Selector-Radio-Buttons-and-Checkboxes-to-an-Embedded-Form
+43. **In a bootstrap responsive page how to center a div**: https://stackoverflow.com/questions/20142606/in-a-bootstrap-responsive-page-how-to-center-a-div
+44. **Bootstrap Grid System**: https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp
+
